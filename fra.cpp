@@ -36,11 +36,11 @@ kochCurve k;
 int it; 
 cout<<"Enter Number Of Iterations : "<<endl; 
 cin>>it; 
-int gd=DETECT,gm;initgraph(&gd,&gm,NULL); 
-k.koch(it,150,20,20,280); 
-k.koch(it,280,280,150,20); 
-k.koch(it,20,280,280,280); 
-getch(); 
-closegraph(); 
+int gd=DETECT,gm;initgraph(&gd,&gm,NULL);            int centerX=getmaxx()/2;
+k.koch(it,150,20,20,280);                            int centerY=getmaxx()/2;
+k.koch(it,280,280,150,20);                           int scale=150;
+k.koch(it,20,280,280,280);                           k.koch(it,centerx scale,centery scale,centerx+scale,centery+scale);
+getch();                                             k.koch(it,centerx+scale,centery+scale,centerx scale,centery-scale);
+closegraph();                                        k.koch(it,centerx scale,centery+scale,centerx+scale,centery scale);
 return 0; 
 } 
