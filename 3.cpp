@@ -7,7 +7,7 @@ class transform
 public: 
 int m,a[20][20],c[20][20]; 
 int i,j,k; 
-public: 
+public:
 void object(); 
 void accept(); 
 void operator *(float b[20][20]) 
